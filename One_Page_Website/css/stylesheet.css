@@ -29,3 +29,11 @@ li {
     display: inline;
     padding: 30px;
 }
+
+.homeSection {
+    margin-bottom: 50px;
+}
+
+.videoSection {
+    margin: 50px;
+}
