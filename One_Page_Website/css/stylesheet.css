@@ -1,0 +1,18 @@
+.galleryBackground {
+    background-color: lightblue;
+    border: solid;
+    width: 50%;
+    padding: 10px;
+}
+
+img {
+    margin: 5px;
+}
+
+.dogSummary {
+    display: inline;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    bottom: 90px;
+}
