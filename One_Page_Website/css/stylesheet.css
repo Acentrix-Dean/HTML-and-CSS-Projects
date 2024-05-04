@@ -16,3 +16,16 @@ img {
     left: 50px;
     bottom: 90px;
 }
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    display: inline;
+    padding: 30px;
+}
