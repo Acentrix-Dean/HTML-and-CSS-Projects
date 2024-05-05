@@ -53,3 +53,7 @@ input {
 #contact {
     border: solid;
 }
+
+.footerContent {
+    text-align: center;
+}
