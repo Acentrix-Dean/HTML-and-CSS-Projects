@@ -37,3 +37,19 @@ li {
 .videoSection {
     margin: 50px;
 }
+
+h3 {
+    position: relative;
+    left: 150px;
+}
+input {
+    padding: 10px;
+}
+
+.formInputs {
+    margin: 20px;
+}
+
+#contact {
+    border: solid;
+}
