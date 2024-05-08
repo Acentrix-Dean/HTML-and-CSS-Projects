@@ -17,7 +17,7 @@ h1 {
 }
 
 .container .squares:nth-child(-n+4) {
-    background-image: url("../images/icons/smileyface2.png");
+    background-image: url("../images/icons/icons2.png");
     color: #fff;
     float: left;
     width: 100px;
@@ -29,5 +29,5 @@ h1 {
 }
 
 .squares:nth-child(-n+4) p {
-
+    font-family: "Helvetica Neue" , Helvetica, Arial, sans-serif;
 }
