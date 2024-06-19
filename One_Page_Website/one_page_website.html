@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopt a Chihuahua</title>
     <link rel="stylesheet" href="./css/one_page_website.css">
+    <script src="./JS/main.js" defer></script>
 </head>
 <body>
     <!-- NAVIGATION -->
@@ -36,25 +37,79 @@
     <section>
         <div id="gallery">
             <div class="gallery-background">
-                <div>
-                    <img src="./images/chihuahua_1.jpeg" alt="An image of a chihuahua">
+                <div class="gallery-flex">
+                    <img src="./images/chihuahua_1.jpeg" alt="An image of a chihuahua" class="hover-shadow" onclick="openModal();currentSlide(1)">
                     <p class="dog-summary">My name is Buttons, I love you!</p>
                 </div>
-                <div>
-                    <img src="./images/chihuahua_2.jpeg" alt="An image of a chihuahua">
+                <div class="gallery-flex">
+                    <img src="./images/chihuahua_2.jpeg" alt="An image of a chihuahua" class="hover-shadow" onclick="openModal();currentSlide(2)">
                     <p class="dog-summary">I'm Teacup, it's very nice to meet you.</p>
                 </div>
-                <div>
-                    <img src="./images/chihuahua_3.jpeg" alt="An image of a chihuahua">
-                    <p class="dog-summary">We are Salt and Pepper, we are brothers and we want to stay together!</p>
+                <div class="gallery-flex">
+                    <img src="./images/chihuahua_3.jpeg" alt="An image of a chihuahua" class="hover-shadow" onclick="openModal();currentSlide(3)">
+                    <p class="dog-summary">We are Salt & Pepper and we are brothers!</p>
                 </div>
-                <div>
-                    <img src="./images/chihuahua_4.jpeg" alt="An image of a chihuahua">
+                <div class="gallery-flex">
+                    <img src="./images/chihuahua_4.jpeg" alt="An image of a chihuahua" class="hover-shadow" onclick="openModal();currentSlide(4)">
                     <p class="dog-summary">The name's Clive. People call me weird but I promise I'm friendly</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- LIGHT BOX -->
+    <div id="myModal" class="modal" >
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+    
+            <div class="mySlides slide-flex">
+                <div class="numbertext">1 / 4</div>
+                <img src="./images/chihuahua_1_lightbox.jpeg">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="./images/chihuahua_2_lightbox.jpeg">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="./images/chihuahua_3_lightbox.jpeg">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="./images/chihuahua_4_lightbox.jpeg">
+            </div>
+        
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        
+            <!-- Thumbnail image controls -->
+            <div class="column thumb-flex">
+                <img class="demo" src="./images/chihuahua_1_thumb.jpeg" onclick="currentSlide(1)" alt="Buttons">
+            </div>
+        
+            <div class="column thumb-flex">
+                <img class="demo" src="./images/chihuahua_2_thumb.jpeg" onclick="currentSlide(2)" alt="Teacup">
+            </div>
+        
+            <div class="column thumb-flex">
+                <img class="demo" src="./images/chihuahua_3_thumb.jpeg" onclick="currentSlide(3)" alt="Salt & Pepper">
+            </div>
+        
+            <div class="column thumb-flex">
+                <img class="demo" src="./images/chihuahua_4_thumb.jpeg" onclick="currentSlide(4)" alt="Clive">
+            </div>
+        </div>
+    </div>
+    
 <!-- GALLERY END -->
 
 <!-- VIDEO INFORMATION -->
